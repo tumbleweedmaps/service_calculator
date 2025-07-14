@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+<section id="allServices">
+    <input type="checkbox" class="inputs" id="input_01">Service 1<br>
+    <input type="checkbox" class="inputs" id="input_02">Service 2<br>
+    <input type="checkbox" class="inputs" id="input_03">Service 3<br>
+    <input type="checkbox" class="inputs" id="input_04">Service 4<br>
+    <input type="checkbox" class="inputs" id="input_05">Service 5<br>
+</section>
+
+<button id="btnSubmit">Submit</button>
+
+
+<script>
+    const btnSubmit = document.getElementById('btnSubmit')
+
+    const input_01 = document.getElementById('input_01');
+    const input_02 = document.getElementById('input_02');
+    const input_03 = document.getElementById('input_03');
+    const input_04 = document.getElementById('input_04');
+    const input_05 = document.getElementById('input_05');
+
+    const service_01 = {
+        name: 'Service 1',
+        checkbox: input_01,
+        price: 1000
+    }
+
+        const service_02 = {
+        name: 'Service 2',
+        checkbox: input_02,
+        price: 2000
+    }
+
+    const allServicesArray = [service_01, service_02]
+
+    btnSubmit.addEventListener('click', () => {
+        console.log('submit')
+        let shoppingList = []
+        
+        allServicesArray.forEach((x) => {
+            if(x.checkbox.checked == true) {
+                console.log(x.price)
+                shoppingList.push(x.price)
+
+            }
+        })
+
+        let total = shoppingList.reduce((sum, num) => sum + num, 0);
+        console.log(shoppingList)
+        console.log(total)
+
+    })
+</script>
+
+
+
+
+    
+</body>
+</html>
