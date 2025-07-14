@@ -8,3 +8,9 @@
     width: 100%;
     background-color: lightblue;
 }
+
+#section_total {
+    height: 200px;
+    width: 400px;
+    border: black 1px solid;
+}
