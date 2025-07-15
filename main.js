@@ -23,6 +23,18 @@ bts_show_array[2].addEventListener('click', ()=> {
 dropdowns[2].style.display = 'grid'
 })
 
+bts_hide_array[0].addEventListener('click', ()=> {
+dropdowns[0].style.display = 'none'
+})
+
+bts_hide_array[1].addEventListener('click', ()=> {
+dropdowns[1].style.display = 'none'
+})
+
+bts_hide_array[2].addEventListener('click', ()=> {
+dropdowns[2].style.display = 'none'
+})
+
 
 
 const list_copyright = [service_01_copywriting, service_02_toneOfVoice]
