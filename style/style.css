@@ -2,7 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 1.2em;
 }
+
+
 
 #allServices {
     width: 400px;
@@ -13,4 +16,23 @@
     height: 200px;
     width: 400px;
     border: black 1px solid;
+}
+
+#calculatorFrame {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: lightgreen;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+
+.checkboxes {
+    height: 40px;
+    width: 40px;
 }

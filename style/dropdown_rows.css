@@ -1,0 +1,9 @@
+.rows {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    background-color: lightgray;
+}
+
+.rows:nth-of-type(odd) {
+    background-color: lightblue;
+}
