@@ -1,3 +1,51 @@
 .dropdowns_services {
     display: none;
 }
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: background 0.2s ease;
+}
+
+.service:hover {
+    background: linear-gradient(to bottom, #e0f2fe, #dbeafe);
+}
+
+.row_title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.row_desc {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.service_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.row_price {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #111827;
+}
+
+.checkboxes {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #3b82f6;
+}
